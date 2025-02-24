@@ -11,12 +11,20 @@ import { Game, Types } from "phaser";
 //  https://newdocs.phaser.io/docs/3.70.0/Phaser.Types.Core.GameConfig
 const config: Types.Core.GameConfig = {
     type: Phaser.AUTO,
-    width: Constants.screenWidth,
-    height: Constants.screenHeight,
+    width: Constants.SCREEN_WIDTH,
+    height: Constants.SCREEN_HEIGHT,
     parent: 'game-container',
     backgroundColor: '#028af8',
     physics: { 
-        default: 'arcade' 
+        default: 'arcade',
+        arcade: {
+            // Specify the gravity of the game for all physics bodies
+            gravity: {
+                y: 200,
+                x: 0
+            },
+            debug: true
+        },        
     },
     scale: {
         mode: Phaser.Scale.FIT,

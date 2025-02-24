@@ -6,13 +6,11 @@ export class GameOver extends Scene
     background: Phaser.GameObjects.Image;
     gameover_text : Phaser.GameObjects.Text;
 
-    constructor ()
-    {
+    constructor () {
         super('GameOver');
     }
 
-    create ()
-    {
+    create () {
         this.camera = this.cameras.main
         this.camera.setBackgroundColor(0xff0000);
 
