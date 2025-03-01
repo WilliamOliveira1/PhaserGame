@@ -24,7 +24,7 @@ const config: Types.Core.GameConfig = {
             //     y: 200,
             //     x: 0
             // },
-            // debug: true // Enable physics debugging
+            debug: true // Enable physics debugging
         },        
     },
     scale: {

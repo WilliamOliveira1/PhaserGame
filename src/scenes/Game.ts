@@ -148,8 +148,10 @@ export class Game extends Scene {
             'bird'
         )
         .setFlipX(true)
-        .setScale(2)
-        .setOrigin(0.5);        
+        .setScale(2)        
+        .setOrigin(0.5);
+        // change the body size of the bird to be more accurate in the collision
+        (this.bird as Phaser.Physics.Arcade.Sprite).setBodySize(this.bird.width, this.bird.height - 6);
         
 
         if (this.bird.body) {
