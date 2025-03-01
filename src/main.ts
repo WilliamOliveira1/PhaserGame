@@ -15,6 +15,7 @@ const config: Types.Core.GameConfig = {
     height: Constants.SCREEN_HEIGHT,
     parent: 'game-container',
     backgroundColor: '#028af8',
+    pixelArt: true,
     physics: { 
         default: 'arcade',
         arcade: {
@@ -23,7 +24,7 @@ const config: Types.Core.GameConfig = {
             //     y: 200,
             //     x: 0
             // },
-            debug: true
+            // debug: true // Enable physics debugging
         },        
     },
     scale: {
